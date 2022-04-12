@@ -51,12 +51,7 @@ paths:
         "200":
           description: success
           schema:
-            allOf:
-            - $ref: '#/definitions/middleware.Response'
-            - properties:
-                data:
-                  $ref: '#/definitions/dto.DemoInput'
-              type: object
+            $ref: '#/definitions/middleware.Response'
       summary: 测试数据绑定
       tags:
       - 用户
